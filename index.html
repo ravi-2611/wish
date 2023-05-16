@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Happy Birthday Anki...ta..</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-image: url("./bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: -250px;
+      }
+
+      .container {
+        position: relative;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .ankita {
+        font-family: lucida handwriting;
+        font-size: 6em;
+        font-weight: bolder;
+        color: #f5f5f5;
+        position: absolute;
+        bottom: 0%;
+        right: 15%;
+      }
+
+      /* Animation keyframes */
+      @keyframes pop-out {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      @keyframes float {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="ankita">Ankita</div>
+      <div>
+        <img
+          src="./red_heart.png"
+          alt="red_heart"
+          style="
+            width: 120px;
+            height: 120px;
+            position: absolute;
+            bottom: 2%;
+            right: 6%;
+            animation: pop-out 1s ease-in-out infinite;
+          "
+        />
+      </div>
+
+      <img
+        src="./fireworks.gif"
+        alt="fireworks"
+        style="
+          width: 350px;
+          height: 400px;
+          position: absolute;
+          top: 0%;
+          right: 20%;
+        "
+      />
+      <img
+        src="./us.jpg"
+        alt="us"
+        style="
+          width: 150px;
+          height: 200px;
+          position: absolute;
+          top: 3%;
+          right: 1%;
+          animation: float 4s infinite;
+        "
+      />
+      <img
+        src="./moving_hearts.gif"
+        alt="moving_hearts"
+        style="position: absolute; top: 20%; right: -1%"
+      />
+      <img
+        src="./stars.gif"
+        alt="stars"
+        style="
+          position: absolute;
+          top: -1%;
+          left: 25%;
+          width: 80px;
+          height: 80px;
+        "
+      />
+      <img
+        src="./stars.gif"
+        alt="stars"
+        style="
+          position: absolute;
+          top: -1%;
+          left: 33%;
+          width: 80px;
+          height: 80px;
+        "
+      />
+      <img
+        src="./gift.gif"
+        alt="gift"
+        style="
+          position: absolute;
+          bottom: 2%;
+          right: 44%;
+          width: 200px;
+          height: 200px;
+        "
+      />
+    </div>
+  </body>
+</html>
